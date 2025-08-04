@@ -1,0 +1,336 @@
+{
+    "Category": {
+        "Components": {
+            "cpu": [
+                {
+                    "id": 1,
+                    "name": "Intel Core i9-11900K",
+                    "price": 499.99,
+                    "description": "High performance for gaming and graphics",
+                    "image": "https://tse1.mm.bing.net/th/id/OIP.RGpHG5xjbxgo1xRGPV8RpQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                },
+                {
+                    "id": 2,
+                    "name": "AMD Ryzen 9 5900X",
+                    "price": 549.99,
+                    "description": "Powerful 12-core CPU ideal for multitasking",
+                    "image": "https://th.bing.com/th/id/R.c3fe2da92da65ee61aa02ff6f0a8dc9b?rik=V0BTgQj4AiihjA&riu=http%3a%2f%2felitehubs.com%2fcdn%2fshop%2fcollections%2f04-12.png%3fv%3d1715339505&ehk=pvaJpszPJuD6z0b4WVsPe8agFCVr8tr3baKRsC6nyU8%3d&risl=&pid=ImgRaw&r=0"
+                },
+                {
+                    "id": 3,
+                    "name": "Intel Core i5-11600K",
+                    "price": 269.99,
+                    "description": "Affordable with stable performance",
+                    "image": "https://tse4.mm.bing.net/th/id/OIP.Pfej39vDkglfVOw5ZfNzpwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                },
+                {
+                    "id": 4,
+                    "name": "AMD Ryzen 5 5600X",
+                    "price": 299.99,
+                    "description": "Popular mid-range option for PC builds",
+                    "image": "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-5-5600x.jpg"
+                }
+            ],
+            "gpu": [
+                {
+                "id": 1,
+                "name": "NVIDIA RTX 3080",
+                "price": 699.99,
+                "description": "Excellent for gaming and rendering",
+                "image": "https://www.notebookcheck.net/fileadmin/Notebooks/NVIDIA/geforce_rtx_3080_fe.png"
+                },
+                {
+                "id": 2,
+                "name": "AMD RX 6800 XT",
+                "price": 649.99,
+                "description": "High performance at competitive price",
+                "image": "https://www.notebookcheck.net/uploads/tx_nbc2/Radeon_RX_6800_XT_1.jpg"
+                },
+                {
+                "id": 3,
+                "name": "NVIDIA RTX 3060 Ti",
+                "price": 399.99,
+                "description": "Popular choice for gamers",
+                "image": "https://tse4.mm.bing.net/th/id/OIP.T2JUgvxnsf_12RDG7Mly4AHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                },
+                {
+                "id": 4,
+                "name": "AMD RX 6700 XT",
+                "price": 479.99,
+                "description": "Optimized for graphic experiences",
+                "image": "https://th.bing.com/th/id/R.f823f7414a93e6cd772096cdbe190b3d?rik=izoGCI1TodxdDg&pid=ImgRaw&r=0"
+                }
+            ],
+            "case": [
+                {
+                "id": 1,
+                "name": "NZXT H510",
+                "price": 89.99,
+                "description": "Minimalist case with tempered glass",
+                "image": "https://th.bing.com/th/id/R.ac979ddde6e6b2c03753f5225b4d0575?rik=cDkUAV9NXX18cw&pid=ImgRaw&r=0"
+                },
+                {
+                "id": 2,
+                "name": "Corsair 4000D Airflow",
+                "price": 94.99,
+                "description": "High airflow with sleek design",
+                "image": "https://tse2.mm.bing.net/th/id/OIP.HBXi8Ru8MhvRqZGw-n9rlwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                },
+                {
+                "id": 3,
+                "name": "Cooler Master MasterBox Q300L",
+                "price": 59.99,
+                "description": "Compact form factor with modular design",
+                "image": "https://www.bhphotovideo.com/images/images2500x2500/cooler_master_mcb_q300l_kann_s00_masterbox_q300l_mini_tower_1424717.jpg"
+                },
+                {
+                "id": 4,
+                "name": "Lian Li PC-O11 Dynamic",
+                "price": 129.99,
+                "description": "Premium case with dual chamber layout",
+                "image": "https://lian-li.com/wp-content/uploads/2020/11/O11D-black-build.jpg"
+                }
+            ],
+            "cooling": [
+                {
+                "id": 1,
+                "name": "Noctua NH-D15",
+                "price": 99.99,
+                "description": "Top-tier air cooling for CPUs",
+                "image": "https://images.hothardware.com/contentimages/newsitem/64923/content/small_nh-d15-g2-white-background.jpg"
+                },
+                {
+                "id": 2,
+                "name": "Corsair iCUE H100i RGB",
+                "price": 129.99,
+                "description": "Liquid cooling with RGB lighting",
+                "image": "https://th.bing.com/th/id/R.d7c5f4ebd5fb4a4f1d1ec6e18e843b20?rik=DzuCJyktVj2OVw&pid=ImgRaw&r=0"
+                },
+                {
+                "id": 3,
+                "name": "DeepCool GAMMAXX 400",
+                "price": 29.99,
+                "description": "Budget-friendly air cooler",
+                "image": "https://tse3.mm.bing.net/th/id/OIP.5UKqumjazdiA3zbWA_NX4AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                },
+                {
+                "id": 4,
+                "name": "Cooler Master Hyper 212 Black Edition",
+                "price": 44.99,
+                "description": "Classic choice for budget builds",
+                "image": "https://os-jo.com/image/cache/catalog/products/Accessories/fans-cooling/212-rgb-/81xDpIiM8eL._SX466_111-1200x1200.png"
+                }
+            ],
+            "motherboard": [
+                {
+                "id": 1,
+                "name": "ASUS ROG Strix Z590-E",
+                "price": 319.99,
+                "description": "High-end board for Intel builds",
+                "image": "https://dlcdnwebimgs.asus.com/files/media/B7CBA71A-2549-4C30-843E-15189BB8E78D/V1/img/z590/kv/hero.png"
+                },
+                {
+                "id": 2,
+                "name": "MSI MAG B550 Tomahawk",
+                "price": 179.99,
+                "description": "Reliable B550 board for Ryzen",
+                "image": "images/motherboard/msi-b550.jpg"
+                },
+                {
+                "id": 3,
+                "name": "Gigabyte X570 AORUS Elite",
+                "price": 199.99,
+                "description": "Feature-rich AM4 motherboard",
+                "image": "images/motherboard/gigabyte-x570.jpg"
+                },
+                {
+                "id": 4,
+                "name": "ASRock B660M Pro RS",
+                "price": 119.99,
+                "description": "Affordable option for Intel 12th Gen",
+                "image": "images/motherboard/asrock-b660m.jpg"
+                }
+            ],
+            "power-supply": [
+                {
+                "id": 1,
+                "name": "Corsair RM850x",
+                "price": 139.99,
+                "description": "Fully modular and 80+ Gold",
+                "image": "images/psu/corsair-rm850x.jpg"
+                },
+                {
+                "id": 2,
+                "name": "EVGA SuperNOVA 750 G5",
+                "price": 129.99,
+                "description": "Stable power for high-end builds",
+                "image": "images/psu/evga-750g5.jpg"
+                },
+                {
+                "id": 3,
+                "name": "Seasonic Focus GX-650",
+                "price": 109.99,
+                "description": "Compact and efficient PSU",
+                "image": "images/psu/seasonic-gx650.jpg"
+                },
+                {
+                "id": 4,
+                "name": "Cooler Master MWE Gold 750 V2",
+                "price": 99.99,
+                "description": "Great value with silent operation",
+                "image": "images/psu/coolermaster-mwe750.jpg"
+                }
+            ],
+            "ram": [
+                {
+                "id": 1,
+                "name": "Corsair Vengeance LPX 16GB",
+                "price": 69.99,
+                "description": "Popular 3200MHz kit for gamers",
+                "image": "images/ram/corsair-lpx-16gb.jpg"
+                },
+                {
+                "id": 2,
+                "name": "G.Skill Trident Z RGB 16GB",
+                "price": 89.99,
+                "description": "High-performance with vibrant RGB",
+                "image": "images/ram/gskill-tridentz.jpg"
+                },
+                {
+                "id": 3,
+                "name": "Kingston FURY Beast 32GB",
+                "price": 149.99,
+                "description": "Great capacity for content creators",
+                "image": "images/ram/kingston-fury-32gb.jpg"
+                },
+                {
+                "id": 4,
+                "name": "Team T-FORCE Delta RGB 16GB",
+                "price": 79.99,
+                "description": "Stylish and fast gaming memory",
+                "image": "images/ram/team-delta-rgb.jpg"
+                }
+            ],
+            "storage": [
+                {
+                "id": 1,
+                "name": "Samsung 980 Pro 1TB NVMe",
+                "price": 129.99,
+                "description": "Blazing fast PCIe Gen4 SSD",
+                "image": "images/storage/samsung-980pro.jpg"
+                },
+                {
+                "id": 2,
+                "name": "WD Black SN850 1TB",
+                "price": 139.99,
+                "description": "Reliable NVMe with gaming speed",
+                "image": "images/storage/wd-sn850.jpg"
+                },
+                {
+                "id": 3,
+                "name": "Crucial MX500 1TB SATA",
+                "price": 89.99,
+                "description": "Well-known SATA SSD with good value",
+                "image": "images/storage/crucial-mx500.jpg"
+                },
+                {
+                "id": 4,
+                "name": "Seagate Barracuda 2TB HDD",
+                "price": 59.99,
+                "description": "Affordable mass storage solution",
+                "image": "images/storage/seagate-2tb.jpg"
+                }
+            ]
+        },
+        "Peripherals": {
+            "keyboard": [
+                {
+                    "id": 1,
+                    "name": "Logitech G Pro",
+                    "price": 129.99,
+                    "description": "Mechanical keyboard designed for esports",
+                    "image": "images/peripherals/logitech-g-pro.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Razer BlackWidow V3",
+                    "price": 139.99,
+                    "description": "RGB lighting and high-quality switches",
+                    "image": "images/storage/seagate-2tb.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Corsair K95 RGB",
+                    "price": 199.99,
+                    "description": "Full-size layout with macro keys",
+                    "image": "images/storage/seagate-2tb.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "SteelSeries Apex Pro",
+                    "price": 179.99,
+                    "description": "Adjustable sensitivity for each key",
+                    "image": "images/storage/seagate-2tb.jpg"
+                }
+            ],
+                "monitor": [
+                {
+                    "id": 1,
+                    "name": "Dell UltraSharp U2723QE",
+                    "price": 379.99,
+                    "description": "4K monitor for office professionals",
+                    "image": "images/storage/seagate-2tb.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "LG UltraGear 27GN950",
+                    "price": 899.99,
+                    "description": "4K gaming monitor with high refresh rate",
+                    "image": "images/storage/seagate-2tb.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "ASUS TUF Gaming VG27AQ",
+                    "price": 329.99,
+                    "description": "2K 165Hz monitor at a great price",
+                    "image": "images/storage/seagate-2tb.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "BenQ EX3501R",
+                    "price": 549.99,
+                    "description": "Ultra-wide 35-inch curved monitor",
+                    "image": "images/storage/seagate-2tb.jpg"
+                }
+            ],
+                "mouse": [
+                {
+                    "id": 1,
+                    "name": "Logitech G502 HERO",
+                    "price": 49.99,
+                    "description": "Popular gaming mouse with precision",
+                    "image": "images/storage/seagate-2tb.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Razer DeathAdder V2",
+                    "price": 69.99,
+                    "description": "Ergonomic design for comfortable grip",
+                    "image": "images/storage/seagate-2tb.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Glorious Model O",
+                    "price": 59.99,
+                    "description": "Lightweight and ultra-fast movement"
+                },
+                {
+                    "id": 4,
+                    "name": "SteelSeries Rival 600",
+                    "price": 79.99,
+                    "description": "Dual sensor system for high accuracy"
+                }
+            ]
+        }
+    }
+}

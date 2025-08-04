@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style/style.common.css" />
+    <link rel="stylesheet" href="Style/style.login.css" />
+    <script src="Script/script.signin-up.js"></script>
+</head>
+<body>
+    <!-- background login page -->
+    <div class="signin-signup-container">
+        <!-- login form -->
+        <div class="form-signin-signup">
+            <h2>Sign In to Your Account</h2>
+            <!-- input fields -->
+            <form class="form-signin">
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"  />
+                    <div class="input-msg"></div>
+                </div>
+
+                <div class="password-input">
+                    <div class="password-label">
+                        <label for="password">Password</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <input type="password" id="password" name="password" placeholder="Enter your password"  />
+                    <div class="input-msg"></div>
+                </div>
+
+                <div class="submit-button">
+                    <input type="submit" value="Sign In" />
+                </div>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Components PC</title>
+        <link rel="stylesheet" href="Style/style.common.css" />
+        <link rel="stylesheet" href="Style/style.homepage.css" />
+        <script src="Script/script.updatenav.js"></script>
+        <script src="Script/script.cart.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <!-- navigation -->
+            <nav class="nav-container">
+                <button class="menu-toggle">&#9776;</button> <!-- ☰ icon -->
+                <!-- logo -->
+                <div class="logo">
+                    Components <br /> PC
+                </div>
+                <!-- navigation list -->
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- drop list -->
+                    <li>
+                        <a href="Category.html">Category <span class="arrow">▼</span></a>
+                        <ul> <!-- drop list items -->
+                            <li><a href="#">Components <span class="arrow">▼</span></a>
+                                <ul>
+                                    <li><a href="/ASM_Web/Category/Components/case.html">Case</a></li>
+                                    <li><a href="/ASM_Web/Category/Components/motherboard.html">Motherboard</a></li>
+                                    <li><a href="/ASM_Web/Category/Components/cpu.html">CPU</a></li>
+                                    <li><a href="/ASM_Web/Category/Components/gpu.html">GPU</a></li>
+                                    <li><a href="/ASM_Web/Category/Components/ram.html">RAM</a></li>
+                                    <li><a href="/ASM_Web/Category/Components/storage.html">Storage</a></li>
+                                    <li><a href="/ASM_Web/Category/Components/power-supply.html">Power Supply</a></li>
+                                    <li><a href="/ASM_Web/Category/Components/cooling.html">Cooling</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Peripherals <span class="arrow">▼</span></a>
+                                <ul>
+                                    <li><a href="/ASM_Web/Category/Peripherals/keyboard.html">Keyboard</a></li>
+                                    <li><a href="/ASM_Web/Category/Peripherals/mouse.html">Mouse</a></li>
+                                    <li><a href="/ASM_Web/Category/Peripherals/monitor.html">Monitor</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- sign in and sign up buttons -->
+                <div class="signin-signup">
+                    <a href="signin.html" class="signin-link">Sign In</a>
+                    <a href="signup.html" class="signup-link">Sign Up</a>
+                </div>
+            </nav>            
+        </header>
+
+        <!-- main -->
+        <main>
+            <!-- main banner -->
+            <section class="main-banner">
+                <div class="banner-text">
+                    <h1>Build Your Dream PC</h1>
+                    <p>Find all the best components for your custom build, from CPU to Case, also peripherals at Components PC!</p>
+                </div>
+            </section>
+            <!-- recommend-list -->
+            <section class="main-recommendations">
+                <h2>Recommended</h2>
+                <div class="recommend-list" id="recommend-list">
+                    <!-- Products will be rendered here by JS -->
+                </div>
+            </section>
+
+            <!-- combo PC-->
+            <section class="combo-pc">
+                <h2>Combo PC</h2>
+                <div class="combo-list">
+                    <div class="combo-card">
+                        <img src="https://m.media-amazon.com/images/I/81aCfycqPnL._AC_SX679_.jpg" alt="Gaming Combo" class="combo-img" />
+                        <h3>Gaming Combo</h3>
+                        <p>Includes CPU, GPU, RAM, and Storage with high-performance for gaming.</p>
+                        <a href="combo.html" class="combo-btn">View details</a>
+                    </div>
+                    <div class="combo-card">
+                        <img src="https://m.media-amazon.com/images/I/51u47WgO-oL.jpg" alt="Productivity Combo" class="combo-img" />
+                        <h3>Productivity Combo</h3>
+                        <p>Perfect for work, includes CPU, RAM, and Storage.</p>
+                        <a href="combo.html" class="combo-btn">View details</a>
+                    </div>
+                    <div class="combo-card">
+                        <img src="https://zoneofdeals.com/wp-content/uploads/2023/06/assemble-pc-with-lcd-1.jpg" alt="Budget Combo" class="combo-img" />
+                        <h3>Budget Combo</h3>
+                        <p>Affordable combo for entry-level builds.</p>
+                        <a href="combo.html" class="combo-btn">View details</a>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <span class="footer-logo">Components <b>PC</b></span>
+                    <span class="footer-copy">&copy; 2025 Components PC. All rights reserved.</span>
+                    <span class="footer-social">
+                        <a href="#" title="Facebook" aria-label="Facebook">Facebook</a> |
+                        <a href="#" title="Instagram" aria-label="Instagram">Instagram</a> |
+                        <a href="#" title="Twitter" aria-label="Twitter">Twitter</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <script>
+fetch('data/product.json')
+    .then(res => res.json())
+    .then(data => {
+        let products = [];
+        Object.values(data.Category.Components).forEach(arr => products = products.concat(arr));
+        Object.values(data.Category.Peripherals).forEach(arr => products = products.concat(arr));
+        const recommendList = document.getElementById('recommend-list');
+        recommendList.innerHTML = products.slice(0, 5).map((p, idx) => `
+            <div class="card-product" data-idx="${idx}">
+                <img src="${p.image}" alt="${p.name}" class="recommend-img" />
+                <h3>${p.name}</h3>
+                <p>${p.description}</p>
+                <p class="product-price">$${p.price}</p>
+                <a href="#" class="recommend-btn add-to-cart-btn" data-idx="${idx}">Add to cart</a>
+            </div>
+        `).join('');
+        // Add to cart event
+        recommendList.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const idx = +this.dataset.idx;
+                window.addToCart(products[idx]);
+            });
+        });
+    });
+</script>
+
+    </body>
+
+</html>

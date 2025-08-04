@@ -1,0 +1,111 @@
+/* Cart table styles */
+#cart-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+}
+
+#cart-list th, #cart-list td {
+    border-bottom: 1px solid #eee;
+    padding: 10px 8px;
+    text-align: left;
+}
+
+#cart-list th {
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+}
+
+#cart-list td img {
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.cart-qty-input {
+    width: 50px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 1rem;
+}
+
+.remove-cart-btn {
+    background: #c00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.remove-cart-btn:hover {
+    background: #900;
+}
+
+#checkout-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+#checkout-btn:hover {
+    background: #444;
+}
+
+/* History styles */
+#history-list {
+    margin-top: 12px;
+}
+
+#history-list .order-history {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 18px;
+    background: #fafafa;
+}
+
+#history-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+#history-list th, #history-list td {
+    border-bottom: 1px solid #eee;
+    padding: 6px 4px;
+    text-align: left;
+}
+
+#history-list th {
+    background: #eee;
+    color: #222;
+    font-weight: bold;
+}
+
+#history-list td img {
+    vertical-align: middle;
+    margin-right: 6px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+@media (max-width: 700px) {
+    #cart-list table, #history-list table {
+        font-size: 0.95rem;
+    }
+    #cart-list th, #cart-list td, #history-list th, #history-list td {
+        padding: 6px 2px;
+    }
+}

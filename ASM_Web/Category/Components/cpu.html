@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU - Components PC</title>
+    <link rel="stylesheet" href="../../Style/style.common.css" />
+    <link rel="stylesheet" href="../../Style/style.category.css" />
+    <script src="../../Script/script.updatenav.js"></script>
+    <script src="../../Script/script.cart.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- navigation -->
+        <nav class="nav-container">
+            <button class="menu-toggle">&#9776;</button> <!-- ☰ icon -->
+            <!-- logo -->
+            <div class="logo">
+                Components <br /> PC
+            </div>
+            <!-- navigation list -->
+            <ul class="nav-list">
+                <li><a href="../../index.html">Home</a></li>
+                <!-- drop list -->
+                <li>
+                    <a href="../../Category.html">Category <span class="arrow">▼</span></a>
+                    <ul> <!-- drop list items -->
+                        <li><a href="#">Components <span class="arrow">▼</span></a>
+                            <ul>
+                                <li><a href="case.html">Case</a></li>
+                                <li><a href="motherboard.html">Motherboard</a></li>
+                                <li><a href="cpu.html">CPU</a></li>
+                                <li><a href="gpu.html">GPU</a></li>
+                                <li><a href="ram.html">RAM</a></li>
+                                <li><a href="storage.html">Storage</a></li>
+                                <li><a href="power-supply.html">Power Supply</a></li>
+                                <li><a href="cooling.html">Cooling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Peripherals <span class="arrow">▼</span></a>
+                            <ul>
+                                <li><a href="../Peripherals/keyboard.html">Keyboard</a></li>
+                                <li><a href="../Peripherals/mouse.html">Mouse</a></li>
+                                <li><a href="../Peripherals/monitor.html">Monitor</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../about.html">About</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+            <!-- signin and signup buttons -->
+            <div class="signin-signup">
+                <a href="../../signin.html" class="signin-link">Sign In</a>
+                <a href="../../signup.html" class="signup-link">Sign Up</a>
+            </div>
+        </nav>            
+    </header>
+
+    <main>
+        <section class="category-detail-section">
+            <h1 class="category-title">CPU Products</h1>
+            <div class="category-detail-grid" id="category-detail-grid">
+                <!-- Products will be rendered here by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <span class="footer-logo">Components <b>PC</b></span>
+                <span class="footer-copy">&copy; 2025 Components PC. All rights reserved.</span>
+                <span class="footer-social">
+                    <a href="#" title="Facebook" aria-label="Facebook">Facebook</a> |
+                    <a href="#" title="Instagram" aria-label="Instagram">Instagram</a> |
+                    <a href="#" title="Twitter" aria-label="Twitter">Twitter</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script>
+fetch('../../data/product.json')
+    .then(res => res.json())
+    .then(data => {
+        const products = data.Category.Components.cpu;
+        const grid = document.getElementById('category-detail-grid');
+        grid.innerHTML = products.map((p, idx) => `
+            <div class="card-product" data-idx="${idx}">
+                <img src="${p.image}" alt="${p.name}" class="category-detail-img" />
+                <h3>${p.name}</h3>
+                <p>${p.description}</p>
+                <p class="product-price">$${p.price}</p>
+                <a href="#" class="recommend-btn add-to-cart-btn" data-idx="${idx}">Add to Cart</a>
+            </div>
+        `).join('');
+        grid.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const idx = +this.dataset.idx;
+                window.addToCart(products[idx]);
+            });
+        });
+    });
+</script>
+</body>
+</html>
+                <span class="footer-social">
+                    <a href="#" title="Facebook" aria-label="Facebook">Facebook</a> |
+                    <a href="#" title="Instagram" aria-label="Instagram">Instagram</a> |
+                    <a href="#" title="Twitter" aria-label="Twitter">Twitter</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

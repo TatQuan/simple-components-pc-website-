@@ -1,0 +1,25 @@
+window.addEventListener("DOMContentLoaded", () => {
+    const headerContainer = document.getElementById("main-header");
+
+    fetch("nav.html")
+        .then(response => response.text())
+        .then(html => {
+            headerContainer.innerHTML = html;
+
+            // 👇 Cập nhật giao diện nếu người dùng đã đăng nhập
+            const user = JSON.parse(localStorage.getItem("currentUser"));
+            const navArea = headerContainer.querySelector(".signin-signup");
+
+            if (user && navArea) {
+                navArea.innerHTML = `
+                    <span>Hello, ${user.name}</span>
+                    <a href="cart.html">🛒 Cart</a>
+                    <button id="logout-btn">Log Out</button>
+                `;
+                navArea.querySelector("#logout-btn").addEventListener("click", () => {
+                    localStorage.removeItem("currentUser");
+                    location.reload();
+                });
+            }
+        });
+});
